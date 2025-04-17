@@ -43,7 +43,7 @@ class ShoppingCart:
         try:
             if product_name in self._items:
                 if quantity < self._items[product_name]["quantity"]:
-                    self._items[product_name]["quantity"]=-quantity
+                    self._items[product_name]["quantity"]-=quantity
                     print(f"you removed {quantity} {product_name}")
                 else:
                     del self._items[product_name]    
