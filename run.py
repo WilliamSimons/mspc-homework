@@ -54,17 +54,17 @@ def run():
     cart = ShoppingCart()
 
     cart.add_product(apple, 3)
-    cart.add_product("banana")
-    cart.add_product("milk", 2)
+    cart.add_product(banana)
+    cart.add_product(milk, 2)
     cart.display_cart()
 
     # Remove items
-    cart.remove_product('apple', 1)
-    cart.remove_product('banana')
+    cart.remove_product(apple, 1)
+    cart.remove_product(banana)
     cart.display_cart()
 
     # Try to remove a product not in the cart
-    cart.remove_product('milk', 5)  # Removes all milk
+    cart.remove_product(milk, 5)  # Removes all milk
     cart.display_cart()
 
 
