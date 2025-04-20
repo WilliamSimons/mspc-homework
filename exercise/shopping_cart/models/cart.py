@@ -29,7 +29,7 @@ class ShoppingCart:
                 self._items[product.name]["quantity"]+=quantity
                 print(f"you added {quantity} {product_name}")
             else:
-                self._items[product.name]={"product":product.name, "quantity":quantity}
+                self._items[product.name]={"product":product, "quantity":quantity}
                 print(f"you added {quantity} {product_name}")
 
         except:
