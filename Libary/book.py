@@ -1,16 +1,16 @@
 class Book():
 
-    def __init__(self, title, author, isbn, checked_out = False):
+    def __init__(self, title:str, author:str, isbn:int, checked_out:bool = False):
         """ base class for all books"""
         self.title = title
         self.author = author
         self.isbn = isbn
         self.checked_out = checked_out
-    
+
     def check_out(self):
         """ marks book as checked out"""
         self.check_out = True
-    
+
     def check_in(self):
         """ marks book as checked in"""
         self.check_out = False
